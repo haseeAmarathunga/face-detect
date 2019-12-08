@@ -49,13 +49,17 @@ export class AppModule { }
 
 In .html file
 
-`<face-detect [width]="500" [height]="380" [triggerFace]="triggerObservable"
+```html
+<face-detect [width]="500" [height]="380" [triggerFace]="triggerObservable"
                   (imageCapture)="viewChange($event)"></face-detect>
-     <button class="button" (click)="triggerSnapshot();">Detect Face</button>`
+                  
+     <button class="button" (click)="triggerSnapshot();">Detect Face</button>
+
+     ```
 
 In .ts file
 
-`
+```typescript
  viewChange(event) {
     console.log(event);
     this.fullFace = event.fullImage;
@@ -63,7 +67,7 @@ In .ts file
     this.eyeRight = event.eyeRight;
     this.eyeLeft = event.eyeLeft;
   }
-  `
+  ```
 ## Options and Events
 This section describes the basic inputs/outputs of the component. All inputs are optional.
 ### Inputs
