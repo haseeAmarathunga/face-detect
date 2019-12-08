@@ -10,7 +10,7 @@ Faces and Iris detection using web-cam
 * Face Detection
 * Iris Iris Detection
 * Return Face image from capture
-* Return Iris image from capture
+* Return Iris images from capture
 
 
 ## Prerequisites
@@ -30,7 +30,7 @@ Faces and Iris detection using web-cam
 
 `npm install --save @haseeamarathunga/face-detection`
 
-2) Import the `WebcamModule` into your Angular module:
+2) Import the `FaceDetectionModule` into your Angular module:
 
 ```typescript
 import {FaceDetectionModule} from '@haseeamarathunga/face-detection';
@@ -45,14 +45,14 @@ import {FaceDetectionModule} from '@haseeamarathunga/face-detection';
 export class AppModule { }
 ```
 
-3) Use the `WebcamComponent` on your pages:
+3) Use the `FaceDetectionComponent` on your pages:
 
 `<face-detection></face-detection>`
 
 ## Options and Events
 This section describes the basic inputs/outputs of the component. All inputs are optional.
 ### Inputs
-* `trigger: Observable<void>`: An `Observable` to trigger image capturing. When it fires, an image will be captured and emitted (see Outputs).
+* `triggerFace: Observable<void>`: An `Observable` to trigger image capturing. When it fires, an image will be captured and emitted (see Outputs).
 * `width: number`: The maximal video width of the webcam live view.
 * `height: number`: The maximal video height of the webcam live view. The actual view will be placed within these boundaries, respecting the aspect ratio of the video stream.
 
