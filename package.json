@@ -1,6 +1,6 @@
 {
   "name": "@haseeamarathunga/face-detect",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Hasitha Amarathunga",
   "contributors": [
     "haseeAmarathunga"
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/haseeAmarathunga/face-detect"
   },
+  "bugs": {
+    "url": "https://github.com/haseeAmarathunga/face-detect/issues"
+  },
+  "homepage": "https://github.com/haseeAmarathunga/face-detect#readme",
   "keywords": [
     "Webcam Face detection",
     "Face detection",
