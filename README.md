@@ -1,7 +1,7 @@
-## @haseeamarathunga/face-detection
+## @haseeamarathunga/face-detect
 
-[![npm (scoped)](https://img.shields.io/npm/v/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@haseeamarathunga/face-detection)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@haseeamarathunga/face-detection)
+[![npm (scoped)](https://img.shields.io/npm/v/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@haseeamarathunga/face-detect)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@haseeamarathunga/face-detect)
 
 Faces and Iris detection using web-cam
 
@@ -28,16 +28,16 @@ Faces and Iris detection using web-cam
 ## Usage
 1) Install the library via standard npm command:
 
-`npm install --save @haseeamarathunga/face-detection`
+`npm install --save @haseeamarathunga/face-detect`
 
-2) Import the `FaceDetectionModule` into your Angular module:
+2) Import the `FaceDetectModule` into your Angular module:
 
 ```typescript
-import {FaceDetectionModule} from '@haseeamarathunga/face-detection';
+import {FaceDetectModule} from '@haseeamarathunga/face-detect';
 
 @NgModule({
   imports: [
-    FaceDetectionModule,
+    FaceDetectModule,
     ...
   ],
   ...
@@ -45,10 +45,25 @@ import {FaceDetectionModule} from '@haseeamarathunga/face-detection';
 export class AppModule { }
 ```
 
-3) Use the `FaceDetectionComponent` on your pages:
+3) Use the `FaceDetectComponent` on your pages:
 
-`<face-detection></face-detection>`
+In .html file
 
+`<face-detect [width]="500" [height]="380" [triggerFace]="triggerObservable"
+                  (imageCapture)="viewChange($event)"></face-detect>
+     <button class="button" (click)="triggerSnapshot();">Detect Face</button>`
+
+In .ts file
+
+`
+ viewChange(event) {
+    console.log(event);
+    this.fullFace = event.fullImage;
+    this.face = event.face;
+    this.eyeRight = event.eyeRight;
+    this.eyeLeft = event.eyeLeft;
+  }
+  `
 ## Options and Events
 This section describes the basic inputs/outputs of the component. All inputs are optional.
 ### Inputs
@@ -75,7 +90,7 @@ Here you can find instructions on how to start developing this library.
 Run `npm run packagr` to build the library. The build artifacts will be stored in the `dist/` directory.
 
 ### Start
-Run `npm start` to build and run the surrounding webapp with the `FaceDetectionModule`. Essential for live-developing.
+Run `npm start` to build and run the surrounding webapp with the `FaceDetectModule`. Essential for live-developing.
 
 ### Generate docs/
 Run `npm run docs` to generate the live-demo documentation pages in the `docs/` directory.

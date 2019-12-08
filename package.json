@@ -1,5 +1,5 @@
 {
-  "name": "@haseeamarathunga/face-detection",
+  "name": "@haseeamarathunga/face-detect",
   "version": "0.1.0",
   "author": "Hasitha Amarathunga",
   "contributors": [
@@ -8,11 +8,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/haseeAmarathunga/Face-detection"
+    "url": "https://github.com/haseeAmarathunga/face-detect"
   },
   "keywords": [
     "Webcam Face detection",
     "Face detection",
+    "Face detect",
     "Face identifier",
     "Face Capture",
     "Iris Capture",
@@ -36,7 +37,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
-    "docs": "npm run build -- --base-href /face-detection/ --output-path docs"
+    "docs": "npm run build -- --base-href /face-detect/ --output-path docs"
   },
   "private": false,
   "peerDependencies": {
