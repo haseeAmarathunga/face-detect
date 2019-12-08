@@ -55,7 +55,7 @@ In .html file
                   
      <button class="button" (click)="triggerSnapshot();">Detect Face</button>
 
-     ```
+```
 
 In .ts file
 
@@ -67,7 +67,7 @@ In .ts file
     this.eyeRight = event.eyeRight;
     this.eyeLeft = event.eyeLeft;
   }
-  ```
+```
 ## Options and Events
 This section describes the basic inputs/outputs of the component. All inputs are optional.
 ### Inputs
@@ -78,14 +78,15 @@ This section describes the basic inputs/outputs of the component. All inputs are
 ### Outputs
 * `imageCapture: EventEmitter<any>`: Whenever an image is captured it return the event object that include fullImage, Face, eyeLeft and eyeRight.
 
-` 
-viewChange(event) {
-     this.fullFace = event.fullImage;
-     this.face = event.face;
-     this.eyeRight = event.eyeRight;
-     this.eyeLeft = event.eyeLeft;
+```typescript
+ viewChange(event) {
+    console.log(event);
+    this.fullFace = event.fullImage;
+    this.face = event.face;
+    this.eyeRight = event.eyeRight;
+    this.eyeLeft = event.eyeLeft;
   }
-`
+```
 
 ## Development
 Here you can find instructions on how to start developing this library.
