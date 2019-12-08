@@ -60,6 +60,15 @@ In .html file
 In .ts file
 
 ```typescript
+ private trigger: Subject<void> = new Subject<void>();
+ public triggerSnapshot(): void {
+     this.trigger.next();
+ }
+
+ public get triggerObservable(): Observable<void> {
+    return this.trigger.asObservable();
+ }
+
  viewChange(event) {
     console.log(event);
     this.fullFace = event.fullImage;
