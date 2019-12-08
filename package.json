@@ -1,26 +1,87 @@
 {
   "name": "@haseeamarathunga/face-detection",
-  "version": "1.0.0",
-  "description": "Faces and Iris detection using webcam",
-  "main": "index.js",
-  "repository": "haseeamarathunga/Face-detection",
-  "keywords": [
-    "face detecting",
-    "face detection",
-    "npm",
-    "npm packages",
-    "packages",
-    "hasee",
-    "hasee amarathunga",
-    "Hasitha",
-    "Hasitha Amarathunga",
-    "AI",
-    "ML"
-  ],
+  "version": "0.1.0",
   "author": "Hasitha Amarathunga",
+  "contributors": [
+    "haseeAmarathunga"
+  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/haseeAmarathunga/Face-detection/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haseeAmarathunga/Face-detection"
   },
-  "homepage": "https://github.com/haseeAmarathunga/Face-detection#readme"
+  "keywords": [
+    "Webcam Face detection",
+    "Face detection",
+    "Face identifier",
+    "Face Capture",
+    "Iris Capture",
+    "Iris detector",
+    "Face recognition",
+    "opencv",
+    "Angular",
+    "Angular 4",
+    "Angular 5",
+    "Angular 6",
+    "Angular 7",
+    "Angular 8",
+    "Hasitha Amarathunga",
+    "Hasee Amarathunga"
+  ],
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ng-package.json",
+    "docs": "npm run build -- --base-href /face-detection/ --output-path docs"
+  },
+  "private": false,
+  "peerDependencies": {
+    "@angular/core": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0",
+    "rxjs": "^5.0.0 || ^6.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.800.3",
+    "@angular/animations": "^8.0.1",
+    "@angular/cli": "~8.0.3",
+    "@angular/common": "^8.0.1",
+    "@angular/compiler": "^8.0.1",
+    "@angular/compiler-cli": "^8.0.1",
+    "@angular/core": "^8.0.1",
+    "@angular/forms": "^8.0.1",
+    "@angular/language-service": "^8.0.1",
+    "@angular/platform-browser": "^8.0.1",
+    "@angular/platform-browser-dynamic": "^8.0.1",
+    "@angular/router": "^8.0.1",
+    "@types/jasmine": "~3.3.13",
+    "@types/jasminewd2": "~2.0.6",
+    "@types/node": "~12.0.8",
+    "ng-open-cv": "^0.3.1",
+    "codelyzer": "^5.0.1",
+    "core-js": "^3.1.3",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-cli": "~2.0.0",
+    "karma-coverage-istanbul-reporter": "^2.0.5",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "ng-packagr": "^5.1.0",
+    "protractor": "^5.4.2",
+    "rxjs": "^6.5.2",
+    "ts-node": "~8.3.0",
+    "tsickle": "^0.35.0",
+    "tslib": "^1.10.0",
+    "tslint": "~5.17.0",
+    "typescript": "^3.4.5",
+    "zone.js": "~0.9.1"
+  },
+  "dependencies": {
+    "@angular/cdk": "^8.2.3",
+    "@angular/flex-layout": "^8.0.0-beta.27"
+  }
 }

@@ -1,0 +1,17 @@
+<div class="container">
+  <webcam [trigger]="triggerObservable" [width]="width" [height]="height" (imageCapture)="handleImage($event)"></webcam>
+  <canvas hidden #canvasInput id="canvasInput"></canvas>
+  <canvas [hidden]="!isCaptured || isCaptured" #canvasOutput id="canvasOutput"
+          style="width: 640px !important;object-fit: cover; !important; height: 480px !important;margin: auto !important;"></canvas>
+
+</div>
+
+<canvas [hidden]="!isCaptured || isCaptured"
+        style="width: 100px !important;object-fit: contain !important;height: 100px !important;margin: auto !important;"
+        id="eyeLeft"></canvas>
+<canvas [hidden]="!isCaptured || isCaptured"
+        style="width: 100px !important;object-fit: contain !important;height: 100px !important;margin: auto !important;"
+        id="eyeRight"></canvas>
+
+<canvas [hidden]="!isCaptured || isCaptured" id="face"
+        style="width: 100% !important;object-fit: cover !important;height: 100% !important;margin: auto !important;"></canvas>
