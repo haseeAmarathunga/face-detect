@@ -1,0 +1,26 @@
+{
+  "name": "@haseeamarathunga/face-detection",
+  "version": "1.0.0",
+  "description": "Faces and Iris detection using webcam",
+  "main": "index.js",
+  "repository": "haseeamarathunga/Face-detection",
+  "keywords": [
+    "face detecting",
+    "face detection",
+    "npm",
+    "npm packages",
+    "packages",
+    "hasee",
+    "hasee amarathunga",
+    "Hasitha",
+    "Hasitha Amarathunga",
+    "AI",
+    "ML"
+  ],
+  "author": "Hasitha Amarathunga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haseeAmarathunga/Face-detection/issues"
+  },
+  "homepage": "https://github.com/haseeAmarathunga/Face-detection#readme"
+}
