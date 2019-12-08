@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "downlevelIteration": true,
     "importHelpers": true,
     "module": "esnext",
@@ -17,6 +18,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "face-detect": [
+        "dist/face-detect"
+      ],
+      "face-detect/*": [
+        "dist/face-detect/*"
+      ]
+    }
   }
 }

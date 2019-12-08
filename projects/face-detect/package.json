@@ -1,0 +1,43 @@
+{
+  "name": "@haseeamarathunga/face-detect",
+  "version": "0.1.7",
+  "author": "Hasitha Amarathunga",
+  "contributors": [
+    "haseeAmarathunga"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haseeAmarathunga/face-detect"
+  },
+  "bugs": {
+    "url": "https://github.com/haseeAmarathunga/face-detect/issues"
+  },
+  "homepage": "https://github.com/haseeAmarathunga/face-detect#readme",
+  "keywords": [
+    "Webcam Face detection",
+    "Face detection",
+    "Face detect",
+    "Face identifier",
+    "Face Capture",
+    "Iris Capture",
+    "Iris detector",
+    "Face recognition",
+    "opencv",
+    "Angular",
+    "Angular 4",
+    "Angular 5",
+    "Angular 6",
+    "Angular 7",
+    "Angular 8",
+    "Hasitha Amarathunga",
+    "Hasee Amarathunga"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^8.0.1",
+    "@angular/core": "^8.0.1",
+    "ng-open-cv": "^0.3.1",
+    "ngx-webcam": "^0.2.2",
+    "tslib": "^1.9.0"
+  }
+}

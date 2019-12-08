@@ -1,6 +1,6 @@
 {
   "name": "@haseeamarathunga/face-detect",
-  "version": "0.1.2",
+  "version": "0.1.7",
   "author": "Hasitha Amarathunga",
   "contributors": [
     "haseeAmarathunga"
@@ -33,23 +33,16 @@
     "Hasitha Amarathunga",
     "Hasee Amarathunga"
   ],
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json",
-    "docs": "npm run build -- --base-href /face-detect/ --output-path docs"
-  },
-  "private": false,
   "peerDependencies": {
-    "@angular/core": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0",
-    "rxjs": "^5.0.0 || ^6.0.0"
+    "@angular/common": "^8.0.1",
+    "@angular/core": "^8.0.1",
+    "ng-open-cv": "^0.3.1",
+    "ngx-webcam": "^0.2.2",
+    "tslib": "^1.9.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.800.3",
+    "@angular-devkit/build-ng-packagr": "~0.800.0",
     "@angular/animations": "^8.0.1",
     "@angular/cli": "~8.0.3",
     "@angular/common": "^8.0.1",
@@ -87,6 +80,9 @@
   },
   "dependencies": {
     "@angular/cdk": "^8.2.3",
-    "@angular/flex-layout": "^8.0.0-beta.27"
+    "@angular/flex-layout": "^8.0.0-beta.27",
+    "ng-open-cv": "^0.3.1",
+    "ngx-webcam": "^0.2.2",
+    "tslib": "^1.9.0"
   }
 }

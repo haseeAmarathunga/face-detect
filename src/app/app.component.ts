@@ -1,8 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {WebcamImage} from './modules/webcam/domain/webcam-image';
-import {WebcamUtil} from './modules/webcam/util/webcam.util';
-import {WebcamInitError} from './modules/webcam/domain/webcam-init-error';
+import {WebcamInitError, WebcamUtil} from 'ngx-webcam';
 
 @Component({
   selector: 'appRoot',

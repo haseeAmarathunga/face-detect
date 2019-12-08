@@ -1,16 +1,32 @@
 import {Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {BehaviorSubject, forkJoin, Observable, Subject, Subscription} from 'rxjs';
-import {WebcamImage} from '../domain/webcam-image';
-import {filter, switchMap, tap} from 'rxjs/operators';
 import {NgOpenCVService, OpenCVLoadResult} from 'ng-open-cv';
-import {WebcamComponent} from '../webcam/webcam.component';
+import {filter, switchMap, tap} from 'rxjs/operators';
+import {WebcamComponent, WebcamImage} from 'ngx-webcam';
 declare var cv: any;
-
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'face-detect',
-  templateUrl: './face-detect.component.html',
-  styleUrls: ['./face-detect.component.scss']
+  template: `
+      <div class="container">
+          <webcam [trigger]="triggerObservable" [width]="width" [height]="height" (imageCapture)="handleImage($event)"></webcam>
+          <canvas hidden #canvasInput id="canvasInput"></canvas>
+          <canvas [hidden]="!isCaptured || isCaptured" #canvasOutput id="canvasOutput"
+                  style="width: 640px !important;object-fit: cover; !important; height: 480px !important;margin: auto !important;"></canvas>
+
+      </div>
+
+      <canvas [hidden]="!isCaptured || isCaptured"
+              style="width: 100px !important;object-fit: contain !important;height: 100px !important;margin: auto !important;"
+              id="eyeLeft"></canvas>
+      <canvas [hidden]="!isCaptured || isCaptured"
+              style="width: 100px !important;object-fit: contain !important;height: 100px !important;margin: auto !important;"
+              id="eyeRight"></canvas>
+
+      <canvas [hidden]="!isCaptured || isCaptured" id="face"
+              style="width: 100% !important;object-fit: cover !important;height: 100% !important;margin: auto !important;"></canvas>
+  `,
+  styles: []
 })
 export class FaceDetectComponent implements OnInit {
   private static DEFAULT_VIDEO_OPTIONS: MediaTrackConstraints = {facingMode: 'environment'};
@@ -41,8 +57,6 @@ export class FaceDetectComponent implements OnInit {
   @Input() public width: number = 640;
   /** Defines the max height of the webcam area in px */
   @Input() public height: number = 480;
-  /** Defines base constraints to apply when requesting video track from UserMedia */
-  @Input() public videoOptions: MediaTrackConstraints = WebcamComponent.DEFAULT_VIDEO_OPTIONS;
 
   @Output()
   imageCapture: EventEmitter<any> = new EventEmitter<any>();
@@ -153,7 +167,7 @@ export class FaceDetectComponent implements OnInit {
         })
       )
       .subscribe(() => {
-        console.log('Face detected');
+        // console.log('Face detected');
       });
   }
 
