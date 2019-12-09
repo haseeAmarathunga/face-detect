@@ -81,6 +81,7 @@
   "dependencies": {
     "@angular/cdk": "^8.2.3",
     "@angular/flex-layout": "^8.0.0-beta.27",
+    "hammerjs": "^2.0.8",
     "ng-open-cv": "^0.3.1",
     "ngx-webcam": "^0.2.2",
     "tslib": "^1.9.0"

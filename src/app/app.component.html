@@ -1,31 +1,33 @@
-<div fxLayout="row">
-  <h2 style="text-align: center">Face Detection - Demo</h2>
-</div>
-<div fxLayout="row">
-  <div fxFlex="40%" class="frame-box">
-    <face-detect [width]="500" [height]="380" [triggerFace]="triggerObservable"
-                 (imageCapture)="viewChange($event)"></face-detect>
-    <button class="button" (click)="triggerSnapshot();">Detect Face</button>
-  </div>
-  <div fxFlex="50%">
+<!--<div fxLayout="row">-->
+<!--  <h2 style="text-align: center">Face Detection - Demo</h2>-->
+<!--</div>-->
+<!--<div fxLayout="row">-->
+<!--  <div fxFlex="40%" class="frame-box">-->
+<!--    <face-detect [width]="500" [height]="380" [triggerFace]="triggerObservable"-->
+<!--                 (imageCapture)="viewChange($event)"></face-detect>-->
+<!--    <button class="button" (click)="triggerSnapshot();">Detect Face</button>-->
+<!--  </div>-->
+<!--  <div fxFlex="50%">-->
 
-    <div fxLayout="row">
-      <div fxFlex="50%" class="frame-box">
-        <img [src]="fullFace" width="100%">
-      </div>
-      <div fxFlex="40%" class="frame-box">
-        <img [src]="face" width="100%">
-      </div>
-    </div>
+<!--    <div fxLayout="row">-->
+<!--      <div fxFlex="50%" class="frame-box">-->
+<!--        <img [src]="fullFace" width="100%">-->
+<!--      </div>-->
+<!--      <div fxFlex="40%" class="frame-box">-->
+<!--        <img [src]="face" width="100%">-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div fxLayout="row">
-      <div fxFlex="20%" class="frame-box-eye">
-        <img [src]="eyeLeft" width="100%">
-      </div>
-      <div fxFlex="20%" class="frame-box-eye">
-        <img [src]="eyeRight" width="100%">
-      </div>
-    </div>
+<!--    <div fxLayout="row">-->
+<!--      <div fxFlex="20%" class="frame-box-eye">-->
+<!--        <img [src]="eyeLeft" width="100%">-->
+<!--      </div>-->
+<!--      <div fxFlex="20%" class="frame-box-eye">-->
+<!--        <img [src]="eyeRight" width="100%">-->
+<!--      </div>-->
+<!--    </div>-->
 
-  </div>
-</div>
+<!--  </div>-->
+<!--</div>-->
+
+<ng-animation name="growIn" data="Hellow World"></ng-animation>

@@ -130,8 +130,8 @@
             "tsConfig": "projects/face-detect/tsconfig.lib.json",
             "project": "projects/face-detect/ng-package.json"
           },
-          "assets": [
-            "projects/face-detect/assets"
+          "script": [
+            "src/assets/opencv/opencv.js"
           ]
         },
         "test": {
@@ -140,10 +140,7 @@
             "main": "projects/face-detect/src/test.ts",
             "tsConfig": "projects/face-detect/tsconfig.spec.json",
             "karmaConfig": "projects/face-detect/karma.conf.js"
-          },
-          "assets": [
-            "projects/face-detect/assets"
-          ]
+          }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -151,6 +148,41 @@
             "tsConfig": [
               "projects/face-detect/tsconfig.lib.json",
               "projects/face-detect/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ng-animation": {
+      "projectType": "library",
+      "root": "projects/ng-animation",
+      "sourceRoot": "projects/ng-animation/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-animation/tsconfig.lib.json",
+            "project": "projects/ng-animation/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-animation/src/test.ts",
+            "tsConfig": "projects/ng-animation/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-animation/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-animation/tsconfig.lib.json",
+              "projects/ng-animation/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

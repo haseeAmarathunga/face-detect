@@ -5,6 +5,7 @@ import {FormsModule} from '@angular/forms';
 import {NgOpenCVModule, OpenCVOptions} from 'ng-open-cv';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FaceDetectModule} from '../../projects/face-detect/src/lib/face-detect.module';
+import {NgAnimationModule} from '../../projects/ng-animation/src/lib/ng-animation.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {FaceDetectModule} from '../../projects/face-detect/src/lib/face-detect.m
     BrowserModule,
     FormsModule,
     FaceDetectModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgAnimationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

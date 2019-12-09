@@ -25,6 +25,12 @@
       ],
       "face-detect/*": [
         "dist/face-detect/*"
+      ],
+      "ng-animation": [
+        "dist/ng-animation"
+      ],
+      "ng-animation/*": [
+        "dist/ng-animation/*"
       ]
     }
   }
