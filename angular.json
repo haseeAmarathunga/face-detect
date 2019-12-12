@@ -129,10 +129,7 @@
           "options": {
             "tsConfig": "projects/face-detect/tsconfig.lib.json",
             "project": "projects/face-detect/ng-package.json"
-          },
-          "script": [
-            "src/assets/opencv/opencv.js"
-          ]
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",

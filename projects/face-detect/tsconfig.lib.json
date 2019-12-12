@@ -5,9 +5,7 @@
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
-    "types": [
-      "../../../node_modules/opencv/opencv.js"
-    ],
+    "types": [],
     "lib": [
       "dom",
       "es2018"
